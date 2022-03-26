@@ -1,0 +1,10 @@
+.hyperlink {
+  margin: 10px;
+
+  text-decoration: none;
+  cursor: pointer;
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}

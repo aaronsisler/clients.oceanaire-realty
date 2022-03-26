@@ -1,0 +1,11 @@
+.section_things {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  background-color: rgb(245, 250, 253);
+  &__header {
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+}
