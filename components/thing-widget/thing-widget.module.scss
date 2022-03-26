@@ -1,0 +1,31 @@
+@import "../../styles/variables.scss";
+
+//Small screens - MOBILE
+@media only screen {
+  .thingWidget {
+    * {
+      margin: 0;
+      padding: 0;
+      font-weight: 200;
+    }
+    min-height: 150px;
+    padding: 50px 25px;
+    background-color: rgb(256, 256, 254);
+    box-shadow: 0px 1px 3px 2px rgb(189 189 189 / 40%);
+    text-align: center;
+    margin-bottom: $MEDIUM;
+    &__titleText {
+      font-weight: 300;
+      font-size: $MIDSMALL;
+      margin-bottom: $SMALL;
+    }
+    &__subText {
+      font-size: $SMALL;
+    }
+    @media only screen and (min-width: $MEDIUM_SCREEN) {
+      max-width: 30%;
+      min-width: max-content;
+      margin-bottom: 0;
+    }
+  }
+}
