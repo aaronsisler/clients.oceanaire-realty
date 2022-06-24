@@ -1,0 +1,91 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+  .section__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+  .buttons__widget {
+    width: 350px;
+    height: fit-content;
+    padding: 30px;
+    background-position: center;
+    background-size: cover;
+  }
+  .buttons__widget:nth-child(odd) {
+    justify-self: flex-end;
+  }
+  .buttons__widget:nth-child(even) {
+    justify-self: flex-start;
+  }
+  .buttons__widget:nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(https://www.theoceanairerealty.com/files/2019/08/Screen-Shot-2019-08-29-at-10.09.18-AM.png);
+  }
+  .buttons__widget:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(https://www.theoceanairerealty.com/files/2019/08/Screen-Shot-2019-08-29-at-10.06.16-AM.png);
+  }
+  .buttons__widget:nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(https://www.theoceanairerealty.com/files/2019/08/Screen-Shot-2019-08-26-at-4.51.56-PM-768x391.png);
+  }
+  .buttons__widget:nth-child(4) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(https://www.theoceanairerealty.com/files/2022/05/197933045_2699948103629039_3181458983216433455_n-1a933e19e675b3d66be952e01703e1dd38691a28-768x576.jpg);
+  }
+  .button__wrapper {
+    padding: 50px 25px;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  .buttons__button {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    color: white !important;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border: solid 1px white;
+    cursor: pointer;
+  }
+  .buttons__button:hover {
+    color: black !important;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .section__buttons {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      justify-content: center;
+    }
+    .buttons__widget {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}
