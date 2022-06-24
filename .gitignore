@@ -7,7 +7,6 @@
 # build/production folders
 .next/
 build/
-out/
 **/build/
 dist/
 **/dist/
