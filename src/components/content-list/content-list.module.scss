@@ -3,6 +3,28 @@
 
 //Small screens - MOBILE
 @media only screen {
+  .content__list {
+    display: grid;
+    justify-items: center;
+  }
+  .content__list div {
+    display: grid;
+    align-content: center;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 25px;
+    padding: 10px;
+    font-size: 1.25rem;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #1e2e73;
+    border-radius: 5px;
+  }
+  @media only screen and (min-width: 600px) {
+    .content__list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 }
 
 //Medium screens - TABLET
