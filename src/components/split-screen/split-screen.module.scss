@@ -4,6 +4,8 @@
 //Small screens - MOBILE
 @media only screen {
   .split-screen__content {
+    display: grid;
+    align-content: center;
     padding: 25px;
     background-color: #1e2e73;
   }
@@ -12,7 +14,8 @@
     font-size: 1.25rem;
   }
   .split-screen__image {
-    margin-block: 25px;
+    margin-block: auto;
+    padding-block: 25px;
     z-index: 2;
     height: fit-content;
   }
@@ -24,9 +27,7 @@
       margin-block: 50px;
     }
     .split-screen__image {
-      z-index: 2;
-      height: fit-content;
-      margin-top: 100px;
+      padding-block: 50px;
     }
     .split-screen__image img {
       width: auto;
