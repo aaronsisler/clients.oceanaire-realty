@@ -3,6 +3,50 @@
 
 //Small screens - MOBILE
 @media only screen {
+  .split-screen__content {
+    padding: 25px;
+    background-color: #1e2e73;
+  }
+  .split-screen__content div {
+    color: white;
+    font-size: 1.25rem;
+  }
+  .split-screen__image {
+    margin-block: 25px;
+    z-index: 2;
+    height: fit-content;
+  }
+  @media only screen and (min-width: 600px) {
+    .section__split-screen {
+      display: grid;
+      grid-template-columns: 1.5fr 2fr;
+      gap: 25px;
+      margin-block: 50px;
+    }
+    .split-screen__image {
+      z-index: 2;
+      height: fit-content;
+      margin-top: 100px;
+    }
+    .split-screen__image img {
+      width: auto;
+    }
+    .split-screen__content {
+      position: relative;
+      max-width: 650px;
+      padding: 50px;
+    }
+    .split-screen__content::after {
+      position: absolute;
+      top: 0;
+      right: 100%;
+      bottom: 0;
+      left: -200px;
+      z-index: 1;
+      background-color: #1e2e73;
+      content: "";
+    }
+  }
 }
 
 //Medium screens - TABLET

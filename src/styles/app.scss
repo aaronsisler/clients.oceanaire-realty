@@ -6,8 +6,6 @@
 //max-width 640px, small screens
 @media only screen {
   * {
-    @include font-type();
-
     box-sizing: border-box;
     margin: 0;
     padding: 0;
