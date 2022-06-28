@@ -1,0 +1,61 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+  .split-screen-with-box-shadow__image {
+    margin-bottom: 25px;
+  }
+  @media only screen and (min-width: 600px) {
+    .section__split-screen-with-box-shadow {
+      display: grid;
+      grid-template-columns: 1.5fr 2fr;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+    .split-screen-with-box-shadow__image {
+      height: fit-content;
+      margin-block: auto;
+      box-shadow: 10px 10px #1e2e73;
+    }
+    .split-screen-with-box-shadow__image img {
+      width: auto;
+    }
+    .split-screen-with-box-shadow__content {
+      position: relative;
+      max-width: 650px;
+      padding: 50px;
+      background-color: white;
+      border-radius: 50px 0px 0px 50px;
+    }
+    .split-screen-with-box-shadow__content::after {
+      position: absolute;
+      top: 0;
+      right: -100%;
+      bottom: 0;
+      left: 100%;
+      z-index: 1;
+      background-color: white;
+      content: "";
+    }
+    .split-screen-with-box-shadow__content div {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

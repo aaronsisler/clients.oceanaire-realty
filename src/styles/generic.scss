@@ -1,0 +1,70 @@
+//Small screens - MOBILE
+//max-width 640px, small screens
+@media only screen {
+  h1 {
+    display: none;
+    color: rgba(0, 0, 0, 0.85) !important;
+    font-weight: 250 !important;
+    font-size: 2.5rem !important;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+  }
+  .site-font {
+    color: rgba(0, 0, 0, 0.85);
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+  .section__header,
+  .section__content,
+  h1 {
+    padding-inline: 10px;
+    text-align: center;
+  }
+  .section__header {
+    margin: 35px 25px;
+    font-weight: 250;
+    font-size: 2rem;
+  }
+  .section__content {
+    font-weight: 250;
+    font-size: 1.25rem;
+  }
+  .max-width,
+  h1 {
+    max-width: 765px;
+  }
+  .content__list div {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+  }
+  .gallery ul {
+    padding-inline: 10px;
+  }
+  @media only screen and (min-width: 600px) {
+    .section__content,
+    .section__header,
+    h1 {
+      padding-inline: 25px;
+      margin-inline: auto;
+    }
+    .gallery ul {
+      padding-inline: 25px;
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}
