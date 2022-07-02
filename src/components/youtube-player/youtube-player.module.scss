@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+  .section__youtube-player {
+    display: grid;
+  }
+  .youtube-player__spacer {
+    display: none;
+  }
+  .youtube-player {
+    min-width: -webkit-fill-available;
+    height: 100%;
+    min-height: 350px;
+  }
+  .youtube-player iframe {
+    min-width: -webkit-fill-available;
+    height: 100%;
+    min-height: 350px;
+  }
+  @media only screen and (min-width: 600px) {
+    .section__youtube-player {
+      grid-template-columns: auto 550px auto;
+    }
+    .youtube-player__spacer {
+      display: grid;
+    }
+    .youtube-player {
+      max-width: 550px;
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

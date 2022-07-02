@@ -7,7 +7,7 @@ const SplitScreenWithBoxShadow = () => (
     <div class="split-screen-with-box-shadow__image">
       <img
         alt="default-alt-text"
-        src="https://www.theoceanairerealty.com/files/2019/08/Screen-Shot-2019-08-26-at-4.51.56-PM-768x391.png"
+        src="https://www.theoceanairerealty.com/files/2022/05/274468719_431525041948475_1212032492919770482_n-4f7012765736e1f63d6144aeba78fa56e0e4c35b.jpg"
       />
     </div>
     <div class="split-screen-with-box-shadow__content max-width site-font">
