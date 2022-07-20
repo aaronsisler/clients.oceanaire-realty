@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+  .split-screen-with-box-shadow__content a {
+    display: grid;
+    justify-content: center;
+    max-width: 350px;
+    margin-inline: auto;
+    padding: 1rem;
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
+    background-color: #1e2e73;
+    border: solid 1px #1e2e73;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .split-screen-with-box-shadow__content a:hover {
+    color: #1e2e73;
+    background-color: white;
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

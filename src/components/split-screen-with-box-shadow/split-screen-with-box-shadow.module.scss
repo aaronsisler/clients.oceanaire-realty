@@ -3,6 +3,10 @@
 
 //Small screens - MOBILE
 @media only screen {
+  .split-screen-with-box-shadow__content {
+    padding: 15px;
+    background-color: white;
+  }
   .split-screen-with-box-shadow__image {
     margin-bottom: 25px;
   }
